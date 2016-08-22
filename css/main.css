@@ -87,6 +87,7 @@ header{
 }
 
 .hero-text h1{
+  font-family: 'Acme', sans-serif;
   padding-top: 30px;
   margin-bottom: 15px;
 }
@@ -95,31 +96,66 @@ header{
   margin-bottom: 50px;
 }
 
+.hero-img{
+  position:relative;
+}
 .hero-img img{
   display: block;
   margin:auto;
   margin-bottom:-5px;
 }
 
+
+/*.typed{
+  position:absolute;
+  top:70px;
+  left: 300px;
+  font-family: 'Economica', sans-serif;
+  display:inline-block;
+}*/
+
+.type-it{
+  position: absolute;
+  left: 23%;
+  top: 20%;
+  font-family: 'Economica', sans-serif;
+  letter-spacing: 1px;
+  font-weight:bold;
+  font-size: 130%;
+}
+
+.line2{
+  top:27%;
+}
+
 .arrow-trans img{
   border-radius: 50%;
   height: 70px;
   display: block;
+  position:absolute;
+  left: 47%;
   margin: auto;
   margin-top: -34px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .4);
 }
 
+.arrow-trans{
+  margin-bottom:30px;
+}
+
 /***************************
  *      About Section     *
  ***************************/
+ .about{
+   margin-top:20px;
+ }
 .about h2{
   font-family: 'Economica', sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 260%;
   color: #000;
-  margin-top: 35px;
+  margin-top: 55px;
 }
 
 .about h2::after{
@@ -154,6 +190,7 @@ header{
 }
 .intro-text .name{
   padding-bottom: 5px;
+  letter-spacing: 1px;
 }
 .intro-text{
   padding-top: 10px;
