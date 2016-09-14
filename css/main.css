@@ -32,7 +32,7 @@
 
  .left-col{
    width: 40%;
-   padding-right:4%;
+   padding-right:2%;
  }
 
  .right-col{
@@ -186,6 +186,7 @@ header{
 
 .bio img{
   border-radius: 50%;
+  height: 160px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 .name{
