@@ -1,8 +1,66 @@
 @media only screen and (max-width: 1140px){
+  .row{
+    width: 100%;
+  }
 
+  .intro-text,
+  .intro-info{
+    text-align: left;
+  }
+
+  .about h2:after{
+    width:72%;
+  }
 }
 
 @media only screen and (max-width: 1023px){
+  .row{
+    width:100%;
+  }
+
+  .hero-text h1{
+    font-size:200%;
+  }
+
+  .hero-text h2{
+    font-size: 60%;
+  }
+
+  .hero-img img{
+    width:100%;
+  }
+  .arrow-trans img{
+    height: 6.5%;
+    margin:auto;
+    margin-top:-15px;
+    left:48%;
+    display:inline-block;
+  }
+
+  .about h2{
+    font-size: 220%;
+  }
+  .about h2:after{
+    width:75%;
+  }
+
+  .intro-text{
+    max-width:40%;
+  }
+
+  .intro-text,
+  .intro-info{
+    text-align: left;
+  }
+
+  .info-title{
+    font-size: 140%;
+  }
+
+  .info-text,
+  .info-text1{
+    font-size: 100%;
+  }
 
 }
 
@@ -57,7 +115,11 @@
   .intro-text{
     display:block;
     text-align: center;
-    margin-left:16%;
+    max-width:67%;
+    margin-left: 15%;
+  }
+  .intro-info{
+    text-align:center;
   }
 
   .logo img{
@@ -82,7 +144,7 @@
   }
 
   .info-text{
-    width:38%;;
+    width:38%;
     text-align:right;
     padding-right: 2%;
   }
@@ -151,6 +213,7 @@
 
   .intro-info{
     font-size: 70%;
+    text-align: center;
   }
   .logo img{
     height: 130px;
@@ -164,11 +227,10 @@
   }
   .intro-text{
     padding-top:0px;
-    width: 70%;
+    max-width: 70%;
     text-align: center;
     margin: 15px 0;
     margin-left:15%;
-    /*float:none;*/
     clear:both;
   }
 
@@ -201,4 +263,18 @@
     width: 48%;
   }
 
+  .tool-container{
+    padding-left:0;
+  }
+
+}
+
+@media only screen and (max-width: 442px){
+  .tool-container .info-title{
+    padding-right: 0px;
+  }
+  .info-text,
+  .info-text1{
+    font-size:80%;
+  }
 }

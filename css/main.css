@@ -135,12 +135,12 @@ header{
 
 .arrow-trans img{
   border-radius: 50%;
-  height: 70px;
+  height: 7%;
   display: block;
   position:absolute;
   left: 47%;
   margin: auto;
-  margin-top: -34px;
+  margin-top: -18px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .4);
 }
 
@@ -201,12 +201,15 @@ header{
 }
 .intro-text{
   padding-top: 10px;
-  max-width: 450px;
+  max-width: 35%;
   text-transform: uppercase;
+  display:block;
+  text-align:center;
 }
 
 .intro-info{
   font-size:100%;
+  text-align:center;
 }
 
 /*** Education/ Toolkit/ Experience ***/
