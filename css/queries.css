@@ -7,7 +7,94 @@
 }
 
 @media only screen and (max-width: 767px){
+  .row{
+    width:100%;
+  }
 
+  .left-col,
+  .left-col-icon,
+  .left-col-text,
+  .right-col,
+  .right-col-icon,
+  .right-col-text{
+    width: 100%;
+  }
+
+  .hero-text h1{
+    font-size: 200%;
+  }
+  .hero-text h2{
+    font-size: 59%;
+  }
+
+  .hero-img img{
+    width:100%;
+  }
+
+  .arrow-trans img{
+    height:35px;
+    margin:auto;
+    margin-top: -12px;
+  }
+
+  .about h2{
+    font-size:200%;
+    margin-top: 45px;
+  }
+
+  .about h2:after{
+    width:75%;
+  }
+  .bio-section{
+    margin-top: 18px;
+    margin-bottom:20px;
+  }
+  .bio img{
+    display:block;
+    margin:auto;
+    height: 170px;
+  }
+  .intro-text{
+    display:block;
+    text-align: center;
+    margin-left:16%;
+  }
+
+  .logo img{
+    margin:auto;
+    display:block;
+    height:170px;
+  }
+  .info-title{
+    font-size:170%;
+    margin: 8px 0;
+    text-align: center;
+    padding-right: 25px;
+  }
+
+  .info-container{
+    display:block;
+  }
+
+  .info-text,
+  .info-text1{
+    font-size:90%;
+  }
+
+  .info-text{
+    width:38%;;
+    text-align:right;
+    padding-right: 2%;
+  }
+
+  .info-text1{
+    width:60%;
+  }
+
+  .resize,
+  .resize1{
+    width: 48%;
+  }
 }
 
 @media only screen and (max-width: 480px){
