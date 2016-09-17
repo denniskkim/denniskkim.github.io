@@ -204,12 +204,12 @@ header{
   max-width: 35%;
   text-transform: uppercase;
   display:block;
-  text-align:center;
+  text-align:left;
 }
 
 .intro-info{
   font-size:100%;
-  text-align:center;
+  text-align:left;
 }
 
 /*** Education/ Toolkit/ Experience ***/
