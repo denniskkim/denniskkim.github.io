@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/css/ven-main.css">
     <!-- <link rel="stylesheet" href="vendor/css/ven-main.css"> -->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="vendor/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/queries.css">
+    <script src="vendor/js/jquery-3.1.0.slim.js"></script>
+    <script src="js/script.js"></script>
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Economica:400' rel='stylesheet' type='text/css'>
@@ -17,26 +19,33 @@
   </head>
   <!-- body -->
   <body>
-    <header>
-      <div class= "hero-text">
+    <section id="hero-container">
+      <div class="container clearfix">
         <h1> Dennis K. Kim</h1>
-        <h2> &raquo; Aspiring Web Developer	&amp;&amp; Software Engineer &laquo; </h2>
-      </div>
-        <div class="hero-img">
+        <h2> &raquo; Aspiring Software Developer	&amp;&amp; Engineer &laquo; </h2>
+        <div class="hero-img grid">
           <img src="img/welcome-hero.png" alt="Editor with Welcome Message">
-          <!-- <div class="console-text">
-            <span class="type-it">
-              <span class="line1">&lt;&#33;DOCTYPE html&gt;<br></span>
-              <span class="line2">&lt;html&gt;<br></span>
-              <span class="line3">&emsp;&lt;head&gt;<br></span>
-              <span class="line4">&emsp;&emsp;&lt;title&gt; <span class="title">Welcome! </span>&lt;&frasl;title&gt;</span>
-            </span>
-          </div> -->
+          <div class="welcoming-animation">
+            <div class="line-1 welcome-text">
+              &lt;!DOCTYPE html><span>&nbsp;</span></div>
+
+            <div class="line-2 welcome-text">&lt;html><span>&nbsp;</span></div>
+
+            <div class="line-3 welcome-text">&emsp;&lt;head><span>&nbsp;</span></span>
+            </div>
+
+            <div class="line-4 welcome-text">
+              &emsp;&emsp;&lt;title&gt;<p>Welcome!:)</p>&lt;/title><span>&nbsp;</span>
+            </div>
+
+          </div>
         </div>
-    </header>
-    <div class="arrow-trans">
-      <img src="img/arrow-down.svg" alt="arrow transition">
-    </div>
+        <!-- <div class="arrow-trans">
+          <img src="img/arrow-down.svg" alt="arrow transition">
+        </div> -->
+      </div>
+    </section>
+
     <section class="about">
       <!-- About me header -->
       <h2>Welcome!</h2>
@@ -46,7 +55,7 @@
         </div>
         <div class="col right-col intro-text">
           <p class="name"> Hi! I'm <span>Dennis Kim.</span> </p>
-          <p class="intro-info"> I like to create and develop cool applications that will assist people in their everyday needs.
+          <p class="intro-info"> I like to create and develop cool applications that can have a good impact on people and assist them with their everyday needs.
               Check out my portfolio to see the applications that I have developed! </p>
         </div>
       </div>
@@ -77,10 +86,10 @@
           <img src="img/experience.png" alt="experience icon">
         </div>
         <div class="col right-col-icon info-section">
-          <h3 class="info-title"> <span>&nbsp;</span>Experience</h3>
+          <h3 class="info-title"><span>&nbsp;</span>Experience</h3>
           <div class="info-container">
             <h4 class="col left-col-text info-text"> Cubic Corporation</h4>
-            <h4 class="col right-col-text info-text1">Software Engineer Intern <span>(April 2016 - present)</span></h4>
+            <h4 class="col right-col-text info-text1">Software Engineer Intern <span>(April 2016 - Oct. 2016)</span></h4>
           </div>
           <div class="info-container">
             <h4 class="col left-col-text info-text"> UCSD CSE Dept.</h4>
@@ -97,7 +106,7 @@
           <h3 class="info-title"> <span>&nbsp;</span>My Toolkit</h3>
           <div class="info-container language-container">
             <h4 class="col left-col-text info-text"> Languages</h4>
-            <h4 class="col right-col-text info-text1">C++ &middot; Python &middot; Javascript &middot; HTML &middot; CSS &middot; Java</h4>
+            <h4 class="col right-col-text info-text1">Javascript &middot; Python &middot; HTML &middot; CSS &middot; Java &middot; C++</h4>
           </div>
           <div class="info-container">
             <h4 class="col left-col-text info-text"> Concept/Library</h4>
@@ -105,12 +114,70 @@
           </div>
           <div class="info-container">
             <h4 class="col left-col-text info-text"> Tools</h4>
-            <h4 class="col right-col-text info-text1">Git &middot; MongoDB &middot; Android Studio</h4>
+            <h4 class="col right-col-text info-text1">Git &middot; Android Studio</h4>
           </div>
         </div>
       </div>
     </section>
     <!-- ADD Project Section -->
+    <section id="projects">
+      <div class="container clearfix">
+        <h2>Projects</h2>
+        <div class="project-showcase">
+          <div class="project-container">
+              <div class="project-img">
+                <img src="img/coming-soon.jpg" alt="coming soon image">
+              </div>
+              <div class="project-info clearfix">
+                  <h3 class="project-title"><span>&nbsp;</span>En Route</h3>
+                  <p class="tools-used">
+                  JavaScript, nodeJS, HTML, CSS
+                  </p>
+                  <p class="project-description">
+                    En Route is a web based application that provides the user with an easy access to find close businesses along their current route.
+                  </p>
+                  <!-- <button class="github-redirect" type='button'>
+                    <a href="#"><i class="ion-social-github"></i>Show Me!</a>
+                  </button> -->
+              </div>
+            </div>
+            <div class="project-container">
+                <div class="project-img">
+                  <img src="img/coming-soon.jpg" alt="coming soon image">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title"><span>&nbsp;</span>En Route</h3>
+                    <p class="tools-used">
+                    JavaScript, nodeJS, HTML, CSS
+                    </p>
+                    <p class="project-description">
+                      En Route is a web based application that provides the user with an easy access to find close businesses along their current route.
+                    </p>
+                    <!-- <button class="github-redirect" type='button'>
+                      <a href="#"><i class="ion-social-github"></i>Show Me!</a>
+                    </button> -->
+                </div>
+              </div>
+            <div class="project-container">
+                  <div class="project-img">
+                    <img src="img/coming-soon.jpg" alt="coming soon image">
+                  </div>
+                  <div class="project-info">
+                      <h3 class="project-title"><span>&nbsp;</span>En Route</h3>
+                      <p class="tools-used">
+                      JavaScript, nodeJS, HTML, CSS
+                      </p>
+                      <p class="project-description">
+                        En Route is a web based application that provides the user with an easy access to find close businesses along their current route.
+                      </p>
+                      <!-- <button class="github-redirect" type='button'>
+                        <a href="#"><i class="ion-social-github"></i>Show Me!</a>
+                      </button> -->
+                  </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer>
       <div class="row links">
@@ -126,10 +193,9 @@
     </footer>
 
     <!-- Javascript links -->
-    <script src="vendor/js/jquery-3.1.0.slim.js"></script>
-    <script src="vendor/js/typed.js"></script>
+    <!-- <script src="vendor/js/jquery-3.1.0.slim.js"></script>
+    <script src="vendor/js/typed.js"></script> -->
 
-    <script src="js/script.js"></script>
   </body>
 
 

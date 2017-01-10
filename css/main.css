@@ -17,6 +17,18 @@
    background-color: #ebf2f2;
  }
 
+section{
+  position: relative;
+  width:100%;
+}
+section::after{
+  /* add the triangle stuff */
+}
+section::before{
+  position:absolute;
+  content: '';
+}
+
  p{
    font-family: 'Economica', sans-serif;
    font-size: 110%;
@@ -82,31 +94,70 @@
  /***************************
   *      Header / hero      *
   ***************************/
-header{
+#hero-container{
+  position: relative;
   background-color:#2c3e50;
+  text-align:center;
+  z-index:10;
+  border-bottom:solid 3px #DDD;
 }
 
-.hero-text h1{
+.container h1{
   font-family: 'Acme', sans-serif;
   padding-top: 30px;
   margin-bottom: 15px;
 }
 
-.hero-text h2{
+.container h2{
   margin-bottom: 50px;
+}
+
+.container{
+  margin-left:auto;
+  margin-right: auto;
+  width: 996px;
+}
+
+.grid{
+  display:inline;
+  float:left;
+  width:970px;
+}
+
+.clearfix::before{
+  content:'';
+  display:table;
+}
+
+.clearfix::after{
+  clear:both;
+  content:' ';
+  display:table;
 }
 
 .hero-img{
   position:relative;
+  width:970px;
 }
 .hero-img img{
   display: block;
+  height:auto;
+  max-width: 100%;
   margin:auto;
-  margin-bottom:-5px;
+  /*margin-bottom:-5px;*/
 }
-
-
-.type-it{
+.welcoming-animation{
+  position:absolute;
+  top:19%;
+  left:14%;
+  font-size:20px;
+}
+.welcome-text{
+  display: block;
+  padding:2px 0;
+  text-align:left;
+}
+/*.type-it{
   position: absolute;
   left: 23%;
   top: 20%;
@@ -114,39 +165,47 @@ header{
   letter-spacing: 1px;
   font-weight:bold;
   font-size: 130%;
-}
+}*/
 
-.line1,
-.line2{
+.line-1,
+.line-2{
   color:#008de7;
 }
 
-.line3{
+.line-3{
   color:#cf7812;
 }
 
-.line4{
+.line-4{
   color:#19a38f;
+  display:inline-block;
+}
+.line-4 p{
+  display:inline-block;
 }
 
 .title{
   color:#5b5b5b;
 }
 
+.arrow-trans{
+  /*position:absolute;*/
+  /*margin-bottom:30px;*/
+}
+
 .arrow-trans img{
-  border-radius: 50%;
+
+  /*border-radius: 50%; */
   height: 7%;
-  display: block;
+  /*display: block;
   position:absolute;
   left: 47%;
   margin: auto;
   margin-top: -18px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);*/*/
 }
 
-.arrow-trans{
-  margin-bottom:30px;
-}
+
 
 /***************************
  *      About Section     *
@@ -155,6 +214,7 @@ header{
    margin-top:20px;
    margin-bottom:60px;
  }
+
 .about h2{
   font-family: 'Economica', sans-serif;
   font-weight: bold;
@@ -234,16 +294,21 @@ header{
 }
 
 .info-title{
+  font-size: 150%;
+}
+
+.info-title,
+.project-title{
   font-family: 'Economica', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 150%;
   font-weight: bold;
   height:auto;
   margin-bottom: 10px;
 }
 
-.info-title span{
+.info-title span,
+.project-title span{
   border-left: 3px solid #2980b9;
 }
 
@@ -302,4 +367,112 @@ header{
   padding-top:23px;
   padding-bottom: 35px;
   padding-right: 15px;
+}
+
+/*****************
+*    Projects    *
+******************/
+#projects{
+  background-color:  #e2e9eb;
+}
+
+#projects h2{
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /*font-size: 230%;*/
+  font-size: 175%;
+  color: #000;
+  margin-top: 55px;
+  margin-bottom:20px;
+}
+
+#projects h2::after{
+  display: block;
+  height: 3px;
+  background-color:#2c3e50;
+  content: " ";
+  width: 100%;
+  max-width:800px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.project-showcase{
+  width:100%;
+  /*text-align:center;*/
+}
+
+.project-container{
+  width: 90%;
+  margin:5px 0;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.project-title{
+  font-size: 130%;
+  text-align: left;
+  margin-bottom:1px;
+  /*padding-left: 28px;*/
+}
+.project-img img{
+  max-width: 280px;
+  max-height: 150px;
+  width:80%;
+  float:right;
+}
+
+.project-img{
+  display:inline-block;
+  width: 50%;
+  float:left;
+  padding-left:5%;
+  margin: 0 auto;
+}
+
+.project-info{
+  margin:0 auto;
+  padding-left:2%;
+  float:right;
+  width:50%;
+  display:inline-block;
+}
+
+
+.github-redirect{
+  width:auto;
+  padding: 0 3px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #d2d2d2;
+}
+
+.github-redirect .ion-social-github{
+  padding-right: 4px;
+}
+
+.tools-used{
+  font-size:100%;
+  text-align:left;
+  padding-bottom: 8px;
+
+}
+
+
+.github-redirect a{
+  text-decoration: none;
+  color:#2980b9;
+}
+
+.project-description{
+  text-align:left;
+  font-size:80%;
+  padding: 5px 0;
+  margin-bottom: 7px;
+}
+
+.project-link button{
+  text-align:left;
+  display: block;
 }

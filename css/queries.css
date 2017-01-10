@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1140px){
-  .row{
+  .row,
+  .hero-img{
     width: 100%;
   }
 
@@ -8,34 +9,44 @@
     text-align: left;
   }
 
-  .about h2:after{
+  .about h2:after,
+  #projects h2::after{
     width:72%;
   }
+
 }
 
 @media only screen and (max-width: 1023px){
-  .row{
+  .row,
+  .hero-img{
     width:100%;
   }
 
-  .hero-text h1{
+  /*
+  change width to modify container
+  */
+  .container{
+    width:75%;
+  }
+
+  .container h1{
     font-size:200%;
   }
 
-  .hero-text h2{
+  .container h2{
     font-size: 60%;
   }
 
-  .hero-img img{
+  /*.hero-img img{
     width:100%;
-  }
-  .arrow-trans img{
+  }*/
+  /*.arrow-trans img{
     height: 6.5%;
     margin:auto;
     margin-top:-15px;
     left:48%;
     display:inline-block;
-  }
+  }*/
 
   .about h2{
     font-size: 220%;
@@ -64,9 +75,22 @@
 
 }
 
-@media only screen and (max-width: 767px){
-  .row{
+/* change the project-showcase view to a center view 
+*/
+@media only screen and (max-width: 930px){
+
+}
+
+
+/* 930 - 1125 */
+@media only screen and (max-width: 845px){
+  .row,
+  .hero-img{
     width:100%;
+  }
+
+  .container{
+    width: 70%;
   }
 
   .left-col,
@@ -78,10 +102,10 @@
     width: 100%;
   }
 
-  .hero-text h1{
+  .container h1{
     font-size: 200%;
   }
-  .hero-text h2{
+  .container h2{
     font-size: 59%;
   }
 
@@ -159,8 +183,10 @@
   }
 }
 
-@media only screen and (max-width: 480px){
-  .row{
+/*only screen and (max-width: 995px) and (min-width: 768px)*/
+@media only screen and (max-width: 460px){
+  .row,
+  .hero-img{
     width:100%;
   }
 
@@ -175,12 +201,11 @@
   }
 
 
-  .hero-text h1{
-    font-size:200%;
+  .container h1{
+    font-size: 160%;
   }
-  .hero-text h2{
-    font-size:57%;
-  }
+
+
   .hero-img img{
     width:100%;
   }
@@ -269,12 +294,35 @@
 
 }
 
-@media only screen and (max-width: 442px){
+@media only screen and (max-width: 458px){
   .tool-container .info-title{
     padding-right: 0px;
   }
+
+  /*.container h1{
+    font-size: 170%;
+  }
+  .container h2{
+    font-size: 39%;
+  }*/
+
   .info-text,
   .info-text1{
     font-size:80%;
   }
+}
+
+@media only screen and (max-width: 422px){
+  .container h1{
+    font-size: 140%;
+  }
+  .container h2{
+    font-size: 57%;
+  }
+  /*.container h1{
+    font-size: 150%;
+  }
+  .container h2{
+    font-size: 23%;
+  }*/
 }
