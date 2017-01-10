@@ -9,9 +9,12 @@
     text-align: left;
   }
 
-  .about h2:after,
+  .about h2:after
+  {
+    width:75%;
+  }
   #projects h2::after{
-    width:72%;
+    width:60%;
   }
 
 }
@@ -48,13 +51,17 @@
     display:inline-block;
   }*/
 
-  .about h2{
+  .about h2,
+  #projects h2{
     font-size: 220%;
   }
   .about h2:after{
     width:75%;
   }
 
+#projects h2::after{
+  width: 90%;
+}
   .intro-text{
     max-width:40%;
   }
@@ -73,12 +80,73 @@
     font-size: 100%;
   }
 
+  /*.project-img img{
+    max-width: 280px;
+    max-height: 150px;
+    width:80%;
+    float:right;
+  }
+
+  .project-img{
+    display:inline-block;
+    width: 50%;
+    float:left;
+    padding-left:5%;
+    margin: 0 auto;
+  }
+
+  .project-info{
+    margin:0 auto;
+    padding-left:2%;
+    float:right;
+    width:50%;
+    display:inline-block;
+  }*/
 }
 
-/* change the project-showcase view to a center view 
+/* change the project-showcase view to a center view
 */
 @media only screen and (max-width: 930px){
 
+  .project-showcase{
+    text-align: center;
+  }
+  #projects h2::after{
+    width: 65%;
+  }
+  .project-container{
+    text-align: center;
+    width:90%;
+    /*margin: 0 auto;*/
+    margin-left: 24%;
+  }
+
+  .project-img{
+    float:none;
+    display: block;
+    margin-left: 0;
+  }
+  .project-info{
+    float:none;
+    display:block;
+    width:80%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .project-img img{
+    float:none;
+    max-width: 328px;
+    max-height: 185px;
+    width:100%;
+  }
+
+  .project-description{
+    width:80%;
+  }
+
+  .github-redirect{
+    display: block;
+  }
 }
 
 
@@ -119,13 +187,17 @@
     margin-top: -12px;
   }
 
-  .about h2{
+  .about h2,
+  #projects h2{
     font-size:200%;
     margin-top: 45px;
   }
 
   .about h2:after{
     width:75%;
+  }
+  #projects h2::after{
+    width: 85%;
   }
   .bio-section{
     margin-top: 18px;
@@ -183,11 +255,30 @@
   }
 }
 
+@media only screen and (max-width: 630px){
+  .project-container{
+    margin-left: 15%;
+  }
+  .project-img img{
+    min-width: 176px;
+    min-height: 90px;
+  }
+  .project-info{
+    width: 95%;
+  }
+  #projects h2::after{
+    width:95%;
+  }
+}
+
 /*only screen and (max-width: 995px) and (min-width: 768px)*/
 @media only screen and (max-width: 460px){
   .row,
   .hero-img{
     width:100%;
+  }
+  .project-container{
+    margin-left: 10%;
   }
 
   .left-col,
@@ -214,7 +305,8 @@
     margin-top:-5px;
     left:46%;
   }
-  .about h2{
+  .about h2,
+  #projects h2{
     font-size: 175%;
     margin-top: 40px;
   }
@@ -290,6 +382,24 @@
 
   .tool-container{
     padding-left:0;
+  }
+
+  .project-title{
+    font-size:110%;
+  }
+
+  .tools-used{
+    font-size:80%;
+  }
+  .project-description{
+    font-size: 77%;
+  }
+  .github-redirect a{
+    font-size: 70%;
+    padding-bottom: 5px;
+  }
+  .github-redirect {
+    height:25px;
   }
 
 }

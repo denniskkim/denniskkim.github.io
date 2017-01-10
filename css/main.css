@@ -381,7 +381,7 @@ section::before{
   font-weight: bold;
   text-align: center;
   /*font-size: 230%;*/
-  font-size: 175%;
+  font-size: 260%;
   color: #000;
   margin-top: 55px;
   margin-bottom:20px;
@@ -392,8 +392,8 @@ section::before{
   height: 3px;
   background-color:#2c3e50;
   content: " ";
-  width: 100%;
-  max-width:800px;
+  /*width: 100%;*/
+  width: 600px;
   margin: 0 auto;
   margin-top: 15px;
 }
@@ -402,6 +402,7 @@ section::before{
   width:100%;
   /*text-align:center;*/
 }
+
 
 .project-container{
   width: 90%;
@@ -419,7 +420,9 @@ section::before{
 .project-img img{
   max-width: 280px;
   max-height: 150px;
-  width:80%;
+  min-width: 196px;
+  min-height: 110px;
+  width:90%;
   float:right;
 }
 
@@ -427,7 +430,7 @@ section::before{
   display:inline-block;
   width: 50%;
   float:left;
-  padding-left:5%;
+  margin-left:5%;
   margin: 0 auto;
 }
 
@@ -441,6 +444,7 @@ section::before{
 
 
 .github-redirect{
+  display:none;
   width:auto;
   padding: 0 3px;
   height: 30px;
@@ -467,7 +471,7 @@ section::before{
 
 .project-description{
   text-align:left;
-  font-size:80%;
+  font-size:87%;
   padding: 5px 0;
   margin-bottom: 7px;
 }
