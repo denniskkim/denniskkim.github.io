@@ -157,31 +157,143 @@ section::before{
   padding:2px 0;
   text-align:left;
 }
-/*.type-it{
-  position: absolute;
-  left: 23%;
-  top: 20%;
-  font-family: 'Economica', sans-serif;
-  letter-spacing: 1px;
-  font-weight:bold;
-  font-size: 130%;
-}*/
 
-.line-1,
-.line-2{
+/* Typing-animation functionality */
+/*.line1,
+.line2{
   color:#008de7;
 }
 
-.line-3{
+.line3{
   color:#cf7812;
 }
 
-.line-4{
+.line4{
   color:#19a38f;
   display:inline-block;
 }
-.line-4 p{
+.line4 p{
   display:inline-block;
+}*/
+
+
+
+keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@keyframes blink-caret {
+    from{ border-left: #666 solid .1em }
+    to{ border-left: transparent solid .1em }
+}
+@keyframes blink-caret-perma {
+    from, to{ border-left: #666 solid .1em }
+    50%{ border-left: transparent solid .1em }
+}
+
+@-webkit-keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@-webkit-keyframes blink-caret {
+    from{ border-left: #666 solid .1em }
+    to{ border-left: transparent solid .1em }
+}
+@-webkit-keyframes blink-caret-perma {
+    from, to{ border-left: #666 solid .1em }
+    50%{ border-left: transparent solid .1em }
+}
+
+@-moz-keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@-moz-keyframes blink-caret {
+    from{ border-left: #666 solid .1em }
+    to{ border-left: transparent solid .1em }
+}
+@-moz-keyframes blink-caret-perma {
+    from, to{ border-left: #666 solid .1em }
+    50%{ border-left: transparent solid .1em }
+}
+
+.welcoming-animation{
+  text-align:left;
+}
+
+div.line1 {
+	top:20%;
+	color:#3a7dda;
+}
+div.line2 {
+	top:27%;
+	color:#3a7dda;
+}
+div.line3 {
+	top:34%;
+	color:#40dac5;
+}
+div.line4 {
+	top:41%;
+	color: #ffbc3e;
+}
+div.line4 p{
+	color:#666;
+	display:inline-block;
+}
+div.line1 span {
+	animation: typing 2s steps(15, end), blink-caret 1s step-end;
+  animation-delay:2ms;
+	animation-fill-mode: forwards;
+    -webkit-animation: typing 2s steps(15, end), blink-caret 1s step-end;
+	-webkit-animation-fill-mode: forwards;
+    -moz-animation: typing 2s steps(15, end), blink-caret 1s step-end;
+	-moz-animation-fill-mode: forwards;
+}
+div.line2 span {
+    width:100%;
+    border-left: .1em #FEFEFE solid;
+
+	animation: typing 1s steps(6, end), blink-caret 1s step-end;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+    -webkit-animation: typing 1s steps(6, end), blink-caret 1s step-end;
+	-webkit-animation-delay:2s;
+	-webkit-animation-fill-mode: forwards;
+    -moz-animation: typing 1s steps(6, end), blink-caret 1s step-end;
+	-moz-animation-delay:2s;
+	-moz-animation-fill-mode: forwards;
+}
+div.line3 span {
+    width:100%;
+    border-left: .1em #FEFEFE solid;
+
+	animation: typing 1s steps(7, end), blink-caret 1s step-end;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+  -webkit-animation: typing 1s steps(7, end), blink-caret 1s step-end;
+	-webkit-animation-delay:3s;
+	-webkit-animation-fill-mode: forwards;
+  -moz-animation: typing 1s steps(7, end), blink-caret 1s step-end;
+	-moz-animation-delay:3s;
+	-moz-animation-fill-mode: forwards;
+}
+div.line4 span {
+    width:100%;
+    border-left: .1em #FEFEFE solid;
+
+	animation: typing 4.5s steps(30, end), blink-caret-perma 1s step-end infinite;
+	animation-delay:4s;
+	animation-fill-mode: forwards;
+  -webkit-animation: typing 4.5s steps(30, end), blink-caret-perma 1s step-end infinite;
+	-webkit-animation-delay:4s;
+	-webkit-animation-fill-mode: forwards;
+  -moz-animation: typing 4.5s steps(30, end), blink-caret-perma 1s step-end infinite;
+	-moz-animation-delay:4s;
+	-moz-animation-fill-mode: forwards;
 }
 
 .title{
