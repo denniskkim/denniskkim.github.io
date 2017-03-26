@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1140px){
+@media only screen and (max-width: 1125px){
   .row,
   .hero-img{
     width: 100%;
@@ -16,6 +16,9 @@
   #projects h2::after{
     width:60%;
   }
+  /*.welcoming-animation{
+    left: 16%;
+  }*/
 
 }
 
@@ -24,7 +27,9 @@
   .hero-img{
     width:100%;
   }
-
+  .welcoming-animation{
+    font-size:18px;
+  }
   /*
   change width to modify container
   */
@@ -147,6 +152,9 @@
   .github-redirect{
     display: block;
   }
+  .welcoming-animation{
+    font-size:16px;
+  }
 }
 
 
@@ -253,6 +261,9 @@
   .resize1{
     width: 48%;
   }
+  .welcoming-animation{
+    font-size:14px;
+  }
 }
 
 @media only screen and (max-width: 630px){
@@ -269,6 +280,9 @@
   #projects h2::after{
     width:95%;
   }
+  .welcoming-animation{
+    font-size:12px;
+  }
 }
 
 /*only screen and (max-width: 995px) and (min-width: 768px)*/
@@ -279,6 +293,9 @@
   }
   .project-container{
     margin-left: 10%;
+  }
+  .welcoming-animation{
+    font-size:10px;
   }
 
   .left-col,
@@ -408,7 +425,9 @@
   .tool-container .info-title{
     padding-right: 0px;
   }
-
+  .welcoming-animation{
+    font-size:9px;
+  }
   /*.container h1{
     font-size: 170%;
   }

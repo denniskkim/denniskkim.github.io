@@ -1,0 +1,105 @@
+body{
+  font-family: 'Economica', sans-serif;
+  font-size: 20px;
+}
+
+p{
+  margin: 5px;
+  letter-spacing: 0.5px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cust-padding{
+  padding-top: 80px;
+}
+
+#personal-container{
+  position:fixed;
+  top: 0;
+  width:45%;
+  height: 100vh;
+  background-color: #CFD8DC;
+  border-right: 1px solid #dddac7;
+  display: inline-block;
+}
+
+#personal-container h3{
+  font-size: 185%;
+  font-weight: 300;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+#name-highlight{
+  color: #006064;
+}
+
+#personal-container p{
+  font-size: 105%;
+  color: #424242;
+}
+
+#personal-photo{
+  border-radius: 50%;
+  height: 240px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#summary-container{
+  width :73%;
+}
+
+#summary-container p{
+  font-family: 'Catamaran', sans-serif;
+  color: #212121;
+  font-size: 100%;
+  line-height:1.5;
+  text-align:center;
+  margin-bottom: 15px;
+}
+
+#social-link{
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*width: 100%;*/
+}
+
+.media-plug{
+  text-decoration: none;
+  margin: 0 15px;
+  font-size:155%;
+  width: 45px;
+  height: 45px;
+  border: 4px double #263238;
+  border-radius: 100%;
+  text-align:center;
+}
+
+.media-plug i{
+  color: black;
+  line-height: 45px;
+  text-align: center;
+}
+
+.media-plug:hover,
+.media-plug i:hover{
+   background-color:#ECEFF1;
+   transition: color 0.3s;
+   color: #616161;
+ }
+
+#project-container{
+  width:55%;
+  height: 100vh;
+  display: inline-block;
+  /*background-color: #90A4AE;*/
+}
