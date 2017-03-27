@@ -35,7 +35,7 @@ h3{
   top: 0;
   width:45%;
   height: 100vh;
-  background-color: #90A4AE;
+  background-color: #ECEFF1;
   border-right: 1px solid #dddac7;
   /*display: inline-block;*/
 }
@@ -94,7 +94,7 @@ h3{
 
 .media-plug:hover,
 .media-plug i:hover{
-   background-color:#ECEFF1;
+   background-color:#E0E0E0;
    transition: color 0.3s;
    color: #616161;
  }
@@ -120,7 +120,8 @@ h3{
   border-bottom: 2px dotted #00695C;
 }
 
-#project1{
+#project1,
+#project3{
   background-color: #CFD8DC;
 }
 
@@ -147,10 +148,16 @@ h3{
   font-family: 'Catamaran', sans-serif;
   color: #212121;
   line-height: 1.5;
-  font-size: 80%;
+  font-size: 81%;
   padding-bottom: 10px;
 }
 
-#project2{
-  background-color:#ECEFF1;
+#project2,
+#project4{
+  background-color:#B0BEC5;
+}
+
+#project3 img{
+  width: 260px;
+  height: 420px;
 }
